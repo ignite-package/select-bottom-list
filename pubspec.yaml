@@ -1,10 +1,12 @@
 name: select_bottom_list
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: "A Flutter widget offering a simple, customizable select list with a bottom sheet modal for user interactions."
+version: 1.0.2
+homepage: https://github.com/ignite-package/select-bottom-list
+repository: https://github.com/ignite-package/select-bottom-list
+issue_tracker: https://github.com/ignite-package/select-bottom-list/issues
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
+  sdk: ">=3.3.4 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

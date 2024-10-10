@@ -1,7 +1,16 @@
+/*
+ * Created by Quang Duong on 10 Oct 2024.
+ * Edits made on original source code by Flutter.
+ * Copyright 2024 The Flutter Authors. All rights reserved.
+*/
+
 import 'package:flutter/material.dart';
 import 'package:select_bottom_list/src/select_item.dart';
 
 import 'select_list_modal.dart';
+
+/// [SelectBottomList]
+///
 
 class SelectBottomList extends StatelessWidget {
   const SelectBottomList({
@@ -15,12 +24,25 @@ class SelectBottomList extends StatelessWidget {
     super.key,
   });
 
+  /// [data] list of item
   final List<SelectItem> data;
+
+  /// [selectedId] id of selected item
   final String selectedId;
+
+  /// [selectedTitle] title of selected item
   final String selectedTitle;
+
+  /// [isDisable] disable input select, default false
   final bool isDisable;
+
+  /// [onChange] function return id, title of selected item
   final Function(String id, String title) onChange;
+
+  /// [selectedTitleStyle] style of selected title
   final TextStyle? selectedTitleStyle;
+
+  /// [titleTextStyle] style of title
   final TextStyle? titleTextStyle;
 
   @override

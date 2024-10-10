@@ -11,29 +11,62 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter widget offering a simple, customizable select list with a bottom sheet modal for user interactions.
+
+## Demo
+
+<table>
+  <tr>
+    <td>Demo</td>
+    <td>Dismiss</td>
+    <td>Display</td>
+  </tr>
+  <tr>
+    <td>
+      <img src="assets/images/select_bottom_list_demo.gif" width="220">
+    </td>
+    <td>
+      <img src="assets/images/select_bottom_list_dismiss.png" width="220">
+    </td>
+    <td>
+      <img src="assets/images/select_bottom_list_display.png" width="220">
+    </td>
+  </tr>
+ </table>
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Select input list widget.
+- Dynamic modal height.
+- Simple select input list with bottom sheet.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+In the pubspec.yaml of your flutter project, add the following dependency:
+
+```yaml
+dependencies:
+  select_bottom_list: any
+```
+
+Import it:
+
+```yaml
+import 'package:select_bottom_list/select_bottom_list.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Basic select bottom list
 
 ```dart
-const like = 'sample';
+SelectBottomList(
+    data: [],
+    selectedId: "",
+    selectedTitle: "",
+    isDisable: false,
+    onChange: (id, title) {
+
+    },
+),
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
